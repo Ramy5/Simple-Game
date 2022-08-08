@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(to top left, #753682 5%, #bf2e34 100%);
+}
+
+main {
+  position: relative;
+  background-image: linear-gradient(to top left, #753682 5%, #bf2e34 100%);
+  background-repeat: no-repeat;
+}
+
+/* start contain */
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.contain .player {
+  background-color: #bb7a97;
+  padding: 6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  transition: all 0.75s;
+}
+
+@media (max-width: 767px) {
+  .contain .player {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) {
+  .contain .player {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contain .player {
+    width: 40%;
+  }
+}
+
+.contain .player-1 {
+  border-radius: 10px 0 0 10px;
+}
+
+@media (max-width: 767px) {
+  .contain .player-1 {
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.contain .player-2 {
+  border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 767px) {
+  .contain .player-2 {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.contain .player .head {
+  color: #333333;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 767px) {
+  .contain .player .head {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 768px) {
+  .contain .player .head {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contain .player .head {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contain .player .head {
+    font-size: 2.5rem;
+  }
+}
+
+.contain .player .final-score {
+  font-size: 60px;
+  position: relative;
+  top: -60px;
+  color: #c7365f;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .contain .player .final-score {
+    font-size: 6rem;
+    top: 0;
+  }
+}
+
+.contain .current {
+  background-color: #c7365f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .contain .current {
+    width: 80%;
+    height: 170px;
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contain .current {
+    width: 95%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contain .current {
+    width: 90%;
+    height: 110px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contain .current {
+    width: 80%;
+    height: 120px;
+    font-size: 25px;
+  }
+}
+
+.contain .current .score {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .contain .current .score {
+    font-size: 3rem;
+  }
+}
+/* end contain */
+/* button */
+.btn-new {
+  top: 15%;
+}
+
+@media (max-width: 767px) {
+  .btn-new {
+    top: 4%;
+    font-size: 1rem !important;
+    left: 30% !important;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn-dice {
+    transform: translate(-50%, -50%) !important;
+    top: 50%;
+    left: 35% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-dice {
+    bottom: 23%;
+  }
+}
+
+.image {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 767px) {
+  .image {
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.win,
+.trying {
+  position: absolute;
+  font-weight: bold;
+  color: #333333;
+}
+
+.trying {
+  font-size: 30px;
+  color: #333333;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+  .trying {
+    top: 50%;
+    left: 6%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 768px) {
+  .trying {
+    top: 64% !important;
+  }
+}
+
+.win {
+  font-size: 20px;
+  top: 24%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+  .win {
+    top: 5% !important;
+    right: 10% !important;
+    left: auto;
+    transform: none;
+  }
+}
+/* start component */
+.hidden {
+  display: none !important;
+}
+
+.container {
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.player-active {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.btn {
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  padding: 15px 30px;
+  font-size: 20px;
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s !important;
+  color: #333333;
+  box-shadow: 0 1.75rem 3.5rem rgb(0 0 0 / 15%);
+}
+
+.btn:active {
+  transform: translate(-50%, 5px) !important;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+}
+
+/* popup */
+.popup {
+  background-color: #fff;
+  padding: 30px;
+  position: fixed;
+  z-index: 9999;
+  margin: auto;
+  width: 50%;
+  left: 25%;
+  top: 20%;
+  border: 1px solid #bb7a97;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  box-shadow: 0 1.75rem 3.5rem rgb(0 0 0 / 15%);
+  background-image: linear-gradient(to top left, #753682 5%, #bf2e34 100%);
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .popup {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+.popup .name {
+  font-size: 25px;
+}
+
+@media (max-width: 767px) {
+  .popup .name {
+    font-size: 20px;
+  }
+}
+
+.popup .name-player {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  caret-color: #bf2e34;
+  font-size: 20px;
+  color: #bf2e34;
+}
+
+.popup .done {
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 30%;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 3px solid #bf2e34;
+  background-color: transparent;
+  color: #fff;
+}
+.popup .done:hover {
+  background-color: #bf2e34;
+}
+/* end component */

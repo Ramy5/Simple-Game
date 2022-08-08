@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- start popup for first name -->
+    <div class="popup hidden">
+      <h3 class="name">What is your first name🤨?</h3>
+      <input
+        class="name-player name-player1"
+        type="text"
+        placeholder="Player One"
+      />
+      <input
+        class="name-player name-player2"
+        type="text"
+        placeholder="Player Two"
+      />
+      <button type="button" class="done">Done</button>
+    </div>
+    <!-- end popup for first name -->
+    <!-- start game -->
+    <main>
+      <div class="container">
+        <div class="contain">
+          <!-- player one -->
+          <section class="player player-1 player-active">
+            <h2 class="head hplayer-1">Player 1</h2>
+            <p class="final-score-1 final-score">45</p>
+            <div class="current currplayer-1">
+              <p class="current-score current-1">Current</p>
+              <p class="score score-1">5</p>
+            </div>
+          </section>
+          <!-- player two -->
+          <section class="player player-2">
+            <h2 class="head hplayer-2">Player 2</h2>
+            <p class="final-score-2 final-score">45</p>
+            <div class="current currplayer-2">
+              <p class="current-score current-2">Current</p>
+              <p class="score score-2">5</p>
+            </div>
+          </section>
+        </div>
+        <!-- btns -->
+        <button type="button" class="btn btn-new">🔚 New Game</button>
+        <img class="image hidden" src="picture/dice-3.png" alt="dice" />
+        <p class="win">Win >= 100</p>
+        <p class="trying">3</p>
+        <button type="button" class="btn btn-dice">🎲 Roll Dice</button>
+      </div>
+    </main>
+    <!-- end game -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
